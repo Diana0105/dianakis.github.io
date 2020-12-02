@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Тестовый сайтик</title>
+</head>
+<body>
+	
+	<header>
+	
+	<!--nav>ul.main-menu>li*5>a{пункт$}-->
+	<nav class="menu-header menu-top">
+		<ul class="main-menu horizontal">
+			<li><a href="#sec1">пункт1</a>
+				<ul class="inner-menu">
+                <li><a href = "#sec1">пункт 1.1</a></li>
+                <li><a href = "#sec1">пункт 1.2</a></li>
+                <li><a href = "#sec1">пункт 1.3</a></li>
+        </ul>
+      </li>
+			<li><a href="#sec2">пункт2</a>
+			  <ul class="inner-menu">
+                <li><a href = "#sec2">пункт 2.1</a></li>
+                <li><a href = "#sec2">пункт 2.2</a></li>
+                <li><a href = "#sec2">пункт 2.3</a></li>
+        </ul>
+      </li>
+			<li><a href="#sec3">пункт3</a>
+			  <ul class ="inner-menu">
+                <li><a href = "#sec3">пункт 3.1</a></li>
+                <li><a href = "#sec3">пункт 3.2</a></li>
+                <li><a href = "#sec3">пункт 3.3</a></li>
+        </ul>
+      </li>
+			<li><a href="#sec4">пункт4</a>
+		   	<ul class="inner-menu">
+                <li><a href = "#sec4">пункт 4.1</a></li>
+                <li><a href = "#sec4">пункт 4.2</a></li>
+                <li><a href = "#sec4">пункт 4.3</a></li>
+        </ul>
+      </li>
+			<li><a href="#sec5">пункт5</a>
+		   	<ul class ="inner-menu">
+                <li><a href = "#sec5">пункт 5.1</a></li>
+                <li><a href = "#sec5">пункт 5.2</a></li>
+                <li><a href = "#sec5">пункт 5.3</a></li>
+         </ul>
+       </li>
+		</ul>
+	</nav>
+	
+	</header>
+	
+	<section class="sec1" id=sec1>
+		<form class="login" action="#" method="post">
+      <fieldset>
+          <legend>Вход</legend>
+          <div>
+              <label for="txt-name">Имя: </label>
+              <input id="txt-name" type="text" name="txt-login" placeholder="Иван Иванов">
+          </div>
+
+          <div>
+              <label for="txt-login">Логин: </label>
+              <input id="txt-login" type="text" name="txt-login" placeholder="ivan_ivanov">
+          </div>
+
+          <div>
+              <label for="txt-pswd">Пароль: </label>
+              <input id="txt-pswd" type="password" name="txt-pswd">
+          </div>
+
+          <select name="list-country" id="list-country">
+              <option value="ru">Россия</option>
+              <option value="kz" selected>Италия</option></option>
+              <option value="by">США</option>
+          </select>
+
+          <div>
+              <input id="chk-agree" type="checkbox">
+              <label for="chk-agree"> Я согласен</label>
+          </div>
+
+          <button type="submit">Отправить</button>
+      </fieldset>
+</form>
+		
+	</section>
+	
+	<section class="sec2" id=sec2>
+		
+	</section>
+	
+	<section class="sec3" id=sec3>
+		
+	</section>
+	
+	<section class="sec4" id=sec4>
+		
+	</section>
+	
+	<section class="sec5" id=sec5>
+		
+	</section>
+	
+	<footer>
+		<a class="top" href="#sec1"></a>
+	</footer>
+	
+</body>
+</html>

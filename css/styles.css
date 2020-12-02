@@ -1,0 +1,248 @@
+html {
+	font-size: 16px;
+}
+
+header::after {
+	display: table;
+	content: "";
+}
+
+/*НАЧАЛО МЕНЮ*/
+.menu-header {
+	position: fixed;
+	background-color: rgba(143, 141, 187, 0.8);
+}
+
+.menu-top {
+	width: 100%;
+}
+
+.menu-left {
+	width: 15%;
+	height: 100%;
+}
+
+.menu-header ul {
+	margin-top: 0;
+	padding-left: 0;
+	
+	list-style-type: none;
+	
+	font-size: 0;
+	text-align: center;
+}
+
+.main-menu > li {
+  position: relative;
+}
+
+.main-menu a {
+	display: block;
+	padding: 10px 15px;
+	
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	/*1rem-единица измер. зависящая от размера html, 1rem=16px в данном случае*/
+	font-family:'Oswald', sans-serif;
+	letter-spacing: 1.5px;
+	/*расстояние между буквами*/
+}
+	
+.main-menu a:hover {
+	color: rgba(143, 141, 187, 0.99);
+	background-color: rgba(242, 242, 242, 0.95);
+}
+
+li:hover .inner-menu {
+    display: block;
+}
+
+/*Начало-Вертикальное меню*/
+
+.vertical > li {
+	border-bottom: 3px solid #87778c;
+}
+
+.vertical > li:last-child {
+	border-bottom: none;
+}
+
+.vertical .inner-menu {
+	left: 100%;
+	top: 0;
+}
+/* Конец - Вертикальное меню */
+
+
+/* Начало - Горизонтальное меню */
+.horizontal > li {
+	display: inline-block;
+	border-right: 3px solid #87778c;
+}
+
+.horizontal > li:last-child {
+	border-right: none;
+}
+
+.horizontal .inner-menu {
+	left: 0;
+}
+/* Конец - Горизонтальное меню */
+
+.inner-menu {
+	display: none;
+  position: absolute;
+  width: 100%;
+  
+  background-color: rgba(143, 141, 187, 0.8);
+}
+
+.inner-menu > li {
+	border-bottom: 2px solid #87778c;
+}
+
+.inner-menu > li:last-child {
+	border-bottom: none;
+}
+
+.inner-menu a {
+	font-size: 11px;
+}
+/* КОНЕЦ МЕНЮ */
+
+section {
+	min-height: 100vh;
+	/*100vh-100% высоты экрана*/
+}
+
+.sec1 {
+	min-height: 95vh;
+	padding: 50px;
+	margin-top: 20px;
+}
+
+/* НАЧАЛО ФОРМЫ*/
+
+.sec1 .login {
+	min-width: 350px;
+	max-width: 400px;
+	/*margin: auto;*/
+	float: right;
+}
+
+.login *:focus {
+	outline: 1px solid #1071c4;
+}
+
+.login fieldset {
+	border: 2px dotted #87778c;
+	background: linear-gradient(135deg, rgba(226,221,231,1) 24%,rgba(183,157,191,1) 83%);
+	padding: 20px;
+}
+
+.login legend {
+	padding: 0 10px;
+	
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #87778c;	
+}
+
+fieldset > div {
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+fieldset div:last-of-type {
+	text-align: left;
+	clear: both;
+}
+
+.login label {
+	margin-right: 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	color: #0a6771;
+}
+
+.login [type="text"],
+.login [type="password"] {
+	padding: 5px 10px;
+	border: none;
+	
+	font-size: 14px;
+	color: #036aa9;
+	
+	box-shadow: 0 0 3px #09a9ad;
+}
+
+.login select {
+	float: right;
+	border: 1px solid #87778c;
+	
+	color: rgba(4, 9, 22, 0.78);
+	background-color: transparent;
+}
+
+.login [type="submit"] {
+	display: block;
+	margin: auto;
+	padding: 5px 25px;
+	border: none;
+	
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #2b7697;
+	
+	cursor: pointer;
+	background-color: #f7e8e4;
+	box-shadow: 1px 1px 2px #552366;
+	
+	transition: all 0.3s;
+}
+
+.login [type="submit"]:hover {
+	background-color: #fff;
+	transform: scale(1.025);
+}
+
+/* КОНЕЦ ФОРМЫ*/
+
+ .sec1,
+ .sec3,
+ .sec5 {
+ 	background-color: rgba(237, 206, 66, 0.59);
+ }
+ 
+ .sec2,
+ .sec4 {
+ 	background-color: rgba(252, 255, 100, 0.44);
+ }
+
+footer .top {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	
+	width: 50px;
+	height: 50px;
+	
+	cursor: pointer;
+
+	background-image: url("../media/top arrow.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 25px;
+}
+
+footer .top:hover {
+	filter: contrast(150%);
+}
+
+
+
